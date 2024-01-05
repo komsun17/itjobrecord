@@ -14,6 +14,7 @@ require_once '../connect.php';
  | 'DELETE FROM table WHERE table_id = :id'
  |--------------------------------------------------------------------------
 */
+<<<<<<< HEAD
 parse_str(file_get_contents("php://input"), $_DELETE);
 
 if(isset($_DELETE['id'])) {
@@ -39,6 +40,14 @@ if(isset($_DELETE['id'])) {
 
 
 
+=======
+$response = [
+    'status' => true,
+    'message' => 'Delete Success'
+];
+http_response_code(204);
+echo json_encode($response);
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
 
 
 ?>

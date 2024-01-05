@@ -83,6 +83,7 @@
         }).done(function(data) {
             let tableData = []
             data.response.forEach(function (item, index){
+<<<<<<< HEAD
                 tableData.push([ 
                     ++index,
                     item.p_type,
@@ -97,6 +98,21 @@
                             <i class="far fa-edit"></i> แก้ไข
                         </a>
                         <button type="button" class="btn btn-danger btn-sm" id="delete" data-id="${item.p_id}">
+=======
+                tableData.push([    
+                    `<a href="${item.url}" target="_blank" class="btn btn-outline-primary p-1"> ${item.p_id} </a>`,
+                    `<img src="${item.p_image}" class="img-fluid" width="150px">`,
+                    `${item.p_name}`,
+                    `${item.price}`,
+                    `<input class="toggle-event" data-id="1" type="checkbox" name="status" 
+                            ${item.p_status ? 'checked': ''} data-toggle="toggle" data-on="เผยแพร่" 
+                            data-off="ปิด" data-onstyle="success" data-style="ios">`,
+                    `<div class="btn-group" role="group">
+                        <a href="form-edit.php?id=${item.p_id}" type="button" class="btn btn-warning">
+                            <i class="far fa-edit"></i> แก้ไข
+                        </a>
+                        <button type="button" class="btn btn-danger" id="delete" data-id="${item.p_id}">
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                             <i class="far fa-trash-alt"></i> ลบ
                         </button>
                     </div>`
@@ -117,6 +133,7 @@
             $('#logs').DataTable( {
                 data: tableData,
                 columns: [
+<<<<<<< HEAD
                     { title: "#" , className: "align-middle"},
                     { title: "Type" , className: "align-middle"},
                     { title: "Machine Name" , className: "align-middle"},
@@ -126,6 +143,14 @@
                     { title: "Model", className: "align-middle"},
                     { title: "Status", className: "align-middle"},
                     { title: "Action", className: "align-middle"}
+=======
+                    { title: "รหัสสินค้า" , className: "align-middle"},
+                    { title: "รูปภาพ" , className: "align-middle"},
+                    { title: "รายละเอียด" , className: "align-middle"},
+                    { title: "ราคา", className: "align-middle"},
+                    { title: "สถานะ", className: "align-middle"},
+                    { title: "จัดการ", className: "align-middle"}
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                 ],
                 initComplete: function () {
                     $(document).on('click', '#delete', function(){ 

@@ -41,7 +41,11 @@
         <img src="../../assets/images/AdminLogo.png" 
              alt="Admin Logo" 
              class="brand-image img-circle elevation-3">
+<<<<<<< HEAD
         <span class="brand-text font-weight-light">Ti Admin</span>
+=======
+        <span class="brand-text font-weight-light">AppzStory Admin</span>
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
     </a>
     <div class="sidebar">
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
@@ -57,29 +61,47 @@
                 <li class="nav-item">
                     <a href="../dashboard/" class="nav-link <?php echo isActive('dashboard') ?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
+<<<<<<< HEAD
                         <p>Dashboard</p>
+=======
+                        <p>หน้าหลัก</p>
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../manager/" class="nav-link <?php echo isActive('manager') ?>">
                         <i class="nav-icon fas fa-user-cog"></i>
+<<<<<<< HEAD
                         <p>System Admin</p>
+=======
+                        <p>ผู้ดูแลระบบ</p>
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../members/" class="nav-link <?php echo isActive('members') ?>">
                         <i class="nav-icon fas fa-users"></i>
+<<<<<<< HEAD
                         <p>Members</p>
+=======
+                        <p>รายชื่อลูกค้า</p>
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../products/" class="nav-link <?php echo isActive('products') ?>">
+<<<<<<< HEAD
                         <i class="nav-icon fas fa-laptop"></i>
                         <p>Accessories</p>
+=======
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        <p>รายการสินค้า</p>
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../orders/" class="nav-link <?php echo isActive('orders') ?>">
+<<<<<<< HEAD
                         <i class="nav-icon fas fa-clipboard"></i>
                         <p>Job Record</p>
                     </a>
@@ -89,6 +111,17 @@
                     <a href="../logout.php" id="logout" class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>Log Out</p>
+=======
+                        <i class="nav-icon fas fa-cart-arrow-down"></i>
+                        <p>รายการสั่งซื้อ</p>
+                    </a>
+                </li>
+                <li class="nav-header">บัญชีของเรา</li>
+                <li class="nav-item">
+                    <a href="../logout.php" id="logout" class="nav-link">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
+                        <p>ออกจากระบบ</p>
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                     </a>
                 </li>
             </ul>

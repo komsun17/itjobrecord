@@ -47,6 +47,7 @@
                                         <div class="col-xl-6 px-1 px-md-5">
 
                                             <div class="form-group">
+<<<<<<< HEAD
                                                 <label for="emp_id">EMP No.</label>
                                                 <input type="text" class="form-control" name="emp_id" id="emp_id" placeholder="รหัสพนักงาน" required>
                                             </div>
@@ -66,6 +67,24 @@
                                                 <label for="emp_position">Position</label>
                                                 <input type="text" class="form-control" name="emp_position" id="emp_position" placeholder="ตำแหน่ง" required>
                                             </div>
+=======
+                                                <label for="first_name">ชื่อจริง</label>
+                                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="ชื่อจริง" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="last_name">นามสกุล</label>
+                                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="นามสกุล" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">เบอร์โทรศัพท์</label>
+                                                <input type="text" class="form-control" name="phone" id="phone" placeholder="เบอร์โทรศัพท์" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">อีเมล</label>
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="อีเมล" required>
+                                            </div>
+
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                                         </div>
                                     </div>
                                 </div>

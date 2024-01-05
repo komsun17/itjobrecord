@@ -18,8 +18,13 @@ require_once '../connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] ==="POST") {
     
+<<<<<<< HEAD
 $m_id = $_POST['m_id'];
 $emp_id  = $_POST['emp_id'];
+=======
+$first_name = $_POST['first_name'];
+$last_name  = $_POST['last_name'];
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
 $email = $_POST['email'];
 $username = $_POST['username'];
 $password = $_POST['password'];

@@ -37,11 +37,19 @@
                             <div class="card-header border-0 pt-4">
                                 <h4>
                                     <i class="fas fa-users"></i> 
+<<<<<<< HEAD
                                     Member
                                 </h4>
                                 <a href="form-create.php" class="btn btn-primary mt-3">
                                     <i class="fas fa-plus"></i>
                                     Add Data
+=======
+                                    รายชื่อลูกค้า
+                                </h4>
+                                <a href="form-create.php" class="btn btn-primary mt-3">
+                                    <i class="fas fa-plus"></i>
+                                    เพิ่มข้อมูล
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                                 </a>
                             </div>
                             <div class="card-body">
@@ -81,6 +89,7 @@
             data.response.forEach(function (item, index){
                 tableData.push([    
                     ++index,
+<<<<<<< HEAD
                     item.emp_id,
                     item.emp_name,
                     item.emp_email,
@@ -91,6 +100,20 @@
                             <i class="far fa-edit"></i> แก้ไข
                         </a>
                         <button type="button" class="btn btn-danger btn-sm" id="delete" data-id="${item.m_id}">
+=======
+                    item.fisrt_name,
+                    item.last_name,
+                    item.email,
+                    item.phone,
+                    `<a href="profile.php?id=${item.id}" class="btn btn-info">
+                        <i class="fas fa-search"></i> รายละเอียด
+                    </a>`,
+                    `<div class="btn-group" role="group">
+                        <a href="form-edit.php?id=${item.id}" type="button" class="btn btn-warning text-white">
+                            <i class="far fa-edit"></i> แก้ไข
+                        </a>
+                        <button type="button" class="btn btn-danger" id="delete" data-id="${item.id}">
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                             <i class="far fa-trash-alt"></i> ลบ
                         </button>
                     </div>`
@@ -111,6 +134,7 @@
             $('#logs').DataTable( {
                 data: tableData,
                 columns: [
+<<<<<<< HEAD
                     { title: "#" , className: "align-middle"},
                     { title: "Emp No.", className: "align-middle"},
                     { title: "Name", className: "align-middle"},
@@ -118,6 +142,15 @@
                     { title: "Section", className: "align-middle"},
                     { title: "Position", className: "align-middle"},
                     { title: "Action", className: "align-middle"}
+=======
+                    { title: "ลำดับ" , className: "align-middle"},
+                    { title: "ชื่อ", className: "align-middle"},
+                    { title: "นามสกุล", className: "align-middle"},
+                    { title: "อีเมล", className: "align-middle"},
+                    { title: "เบอร์โทรศัพท์", className: "align-middle"},
+                    { title: "ข้อมูลส่วนตัว", className: "align-middle"},
+                    { title: "จัดการ", className: "align-middle"}
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                 ],
                 initComplete: function () {
                     $(document).on('click', '#delete', function(){ 

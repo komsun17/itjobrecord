@@ -42,6 +42,7 @@
                                 </a>
                             </div>
                             <form id="formData">
+<<<<<<< HEAD
                             <?php
                                     if (isset($_GET['id'])) {
                                         $id = $_GET['id'];
@@ -50,11 +51,14 @@
                                         $data = $stmt->fetch();
                                     }
                             ?>
+=======
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                                 <div class="card-body">
                                     <div class="row justify-content-center">
                                         <div class="col-xl-6 px-1 px-md-5">
 
                                             <div class="form-group">
+<<<<<<< HEAD
                                                 <label for="m_id">ID</label>
                                                 <input type="text" readonly class="form-control" name="m_id" id="m_id" placeholder="ID" value="<?php echo $data['m_id']; ?>" required>
                                             </div>
@@ -77,6 +81,22 @@
                                             <div class="form-group">
                                                 <label for="emp_position">Position</label>
                                                 <input type="text" class="form-control" name="emp_position" id="emp_position" placeholder="Position" value="<?php echo $data['emp_position']; ?>" required>
+=======
+                                                <label for="first_name">ชื่อจริง</label>
+                                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="ชื่อจริง" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="last_name">นามสกุล</label>
+                                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="นามสกุล" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">เบอร์โทรศัพท์</label>
+                                                <input type="text" class="form-control" name="phone" id="phone" placeholder="เบอร์โทรศัพท์" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">อีเมล</label>
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="อีเมล" required>
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                                             </div>
 
                                         </div>

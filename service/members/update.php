@@ -14,6 +14,7 @@ require_once '../connect.php';
  | 'UPDATE admin SET field1 = :var1, field2= :var2 WHERE admin_id = :id "'
  |--------------------------------------------------------------------------
 */
+<<<<<<< HEAD
 parse_str(file_get_contents("php://input"), $_PUT);
 
 if(isset($_PUT['m_id'])) {
@@ -35,6 +36,8 @@ $stmt->bindParam(':emp_email', $emp_email , PDO::PARAM_STR);
 $stmt->bindParam(':emp_section', $emp_section , PDO::PARAM_STR);
 $stmt->bindParam(':emp_position', $emp_position , PDO::PARAM_STR);
 $stmt->execute();
+=======
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
 $response = [
     'status' => true,
     'message' => 'Update Success'

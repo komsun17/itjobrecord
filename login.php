@@ -2,7 +2,11 @@
   /**
    * Login Page
    *
+<<<<<<< HEAD
    * @link https://appzstory.dev
+=======
+   * 
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
    * @author Yothin Sapsamran (Jame AppzStory Studio)
    */  
 ?>

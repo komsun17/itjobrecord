@@ -14,6 +14,7 @@ require_once '../connect.php';
  | 'INSERT INTO admin (field1, field2, field3) VALUES (:var1, :var2, :var3)'
  |--------------------------------------------------------------------------
 */
+<<<<<<< HEAD
 if ($_SERVER['REQUEST_METHOD'] ==="POST") {
     
     $emp_id = $_POST['emp_id'];
@@ -44,5 +45,13 @@ if ($_SERVER['REQUEST_METHOD'] ==="POST") {
     echo json_encode(array('ststus' => false, 'message' => 'Method Not Allowed!'));
     }
     
+=======
+$response = [
+    'status' => true,
+    'message' => 'Create Success'
+];
+http_response_code(201);
+echo json_encode($response);
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
 
 ?>

@@ -43,13 +43,18 @@
                                 </a>
                             </div>
                             <form id="formData">
+<<<<<<< HEAD
                             <?php
+=======
+                                <?php
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                                     if (isset($_GET['id'])) {
                                         $id = $_GET['id'];
                                         $stmt = $conn->query("SELECT * FROM users WHERE u_id = $id");
                                         $stmt->execute();
                                         $data = $stmt->fetch();
                                     }
+<<<<<<< HEAD
                             ?>
                                 <div class="card-body">
                                     <div class="row">
@@ -58,6 +63,13 @@
                                                 <label for="username">ID</label>
                                                 <input type="text" readonly class="form-control" name="id" id="id" placeholder="User ID" value="<?php echo $data['u_id']; ?>" required>
                                             </div>                                        
+=======
+                                ?>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 px-1 px-md-5">
+
+>>>>>>> ca48ac4b007cba3846b354f6a341670ea37fd656
                                             <div class="form-group">
                                                 <label for="first_name">ชื่อจริง</label>
                                                 <input type="text" class="form-control" name="first_name" id="first_name" placeholder="ชื่อจริง" value="<?php echo $data['firstname']; ?>" required>
