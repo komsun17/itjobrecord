@@ -64,7 +64,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="emp_position">Position</label>
-                                                <input type="text" class="form-control" name="emp_position" id="emp_position" placeholder="แผนก" required>
+                                                <input type="text" class="form-control" name="emp_position" id="emp_position" placeholder="ตำแหน่ง" required>
                                             </div>
                                         </div>
                                     </div>

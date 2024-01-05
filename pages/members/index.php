@@ -87,10 +87,10 @@
                     item.emp_section,
                     item.emp_position,
                     `<div class="btn-group" role="group">
-                        <a href="form-edit.php?id=${item.id}" type="button" class="btn btn-warning btn-sm text-white">
+                        <a href="form-edit.php?id=${item.m_id}" type="button" class="btn btn-warning btn-sm text-white">
                             <i class="far fa-edit"></i> แก้ไข
                         </a>
-                        <button type="button" class="btn btn-danger btn-sm" id="delete" data-id="${item.id}">
+                        <button type="button" class="btn btn-danger btn-sm" id="delete" data-id="${item.m_id}">
                             <i class="far fa-trash-alt"></i> ลบ
                         </button>
                     </div>`

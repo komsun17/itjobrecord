@@ -42,25 +42,41 @@
                                 </a>
                             </div>
                             <form id="formData">
+                            <?php
+                                    if (isset($_GET['id'])) {
+                                        $id = $_GET['id'];
+                                        $stmt = $conn->query("SELECT * FROM tb_members WHERE m_id = $id");
+                                        $stmt->execute();
+                                        $data = $stmt->fetch();
+                                    }
+                            ?>
                                 <div class="card-body">
                                     <div class="row justify-content-center">
                                         <div class="col-xl-6 px-1 px-md-5">
 
                                             <div class="form-group">
-                                                <label for="first_name">ชื่อจริง</label>
-                                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="ชื่อจริง" required>
+                                                <label for="m_id">ID</label>
+                                                <input type="text" readonly class="form-control" name="m_id" id="m_id" placeholder="ID" value="<?php echo $data['m_id']; ?>" required>
                                             </div>
                                             <div class="form-group">
-                                                <label for="last_name">นามสกุล</label>
-                                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="นามสกุล" required>
+                                                <label for="emp_id">Employee ID</label>
+                                                <input type="text" class="form-control" name="emp_id" id="emp_id" placeholder="Employee ID" value="<?php echo $data['emp_id']; ?>" required>
                                             </div>
                                             <div class="form-group">
-                                                <label for="phone">เบอร์โทรศัพท์</label>
-                                                <input type="text" class="form-control" name="phone" id="phone" placeholder="เบอร์โทรศัพท์" required>
+                                                <label for="emp_name">Employee Name</label>
+                                                <input type="text" class="form-control" name="emp_name" id="emp_name" placeholder="Employee Name" value="<?php echo $data['emp_name']; ?>" required>
                                             </div>
                                             <div class="form-group">
-                                                <label for="email">อีเมล</label>
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="อีเมล" required>
+                                                <label for="emp_email">Email</label>
+                                                <input type="email" class="form-control" name="emp_email" id="emp_email" placeholder="Email" value="<?php echo $data['emp_email']; ?>" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="emp_section">Section</label>
+                                                <input type="text" class="form-control" name="emp_section" id="emp_section" placeholder="Section" value="<?php echo $data['emp_section']; ?>" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="emp_position">Position</label>
+                                                <input type="text" class="form-control" name="emp_position" id="emp_position" placeholder="Position" value="<?php echo $data['emp_position']; ?>" required>
                                             </div>
 
                                         </div>

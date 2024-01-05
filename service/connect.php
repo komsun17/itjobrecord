@@ -22,7 +22,7 @@ class Database {
     private $host = "localhost";
     private $dbname = "bos_db";
     private $username = "root";
-    private $password = "Ti@1996ADM";
+    private $password = "";
     private $conn = null;
 
     public function connect() {
